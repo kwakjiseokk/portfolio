@@ -8,19 +8,18 @@
 </head>
 <body>
 
-    <section id="home" class="screen">
+   <section id="home" class="screen">
     <div class="home">    
-<h1>hello! :)</h1>
+        <h1>hello! :)</h1>
 
-
- <div class="buttons">
-    <a href="#about" class="btn" style="text-decoration: none; display: inline-block;">about me</a>
-    <a href="#skills" class="btn" style="text-decoration: none; display: inline-block;">works</a>
-     <a href="#contact" class="btn" style="text-decoration: none; display: inline-block;">contact</a>
- </div>
-
+        <nav id="floating-nav" class="nav-container">
+            <div class="buttons">
+                <a href="#about" class="btn">about me</a>
+                <a href="#skills" class="btn">works</a>
+                <a href="#contact" class="btn">contact</a>
+            </div>
+        </nav>
     </div>
-
 </section>
 
 <section id="about" class="screen2">
@@ -92,6 +91,22 @@
         </div>
     </div>
 </section>
+<script>
+    const nav = document.getElementById('floating-nav');
+    const homeSection = document.getElementById('home');
 
+    window.addEventListener('scroll', () => {
+        // Triggers the floating effect earlier on mobile screens
+        const triggerPoint = window.innerWidth < 768 
+            ? homeSection.offsetHeight * 0.2 
+            : homeSection.offsetHeight * 0.3;
+
+        if (window.scrollY > triggerPoint) {
+            nav.classList.add('nav-fixed');
+        } else {
+            nav.classList.remove('nav-fixed');
+        }
+    });
+</script>
 </body>
 </html>
