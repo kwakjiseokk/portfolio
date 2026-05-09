@@ -391,12 +391,23 @@ a.btn:hover {
 
 @media (max-width: 768px) {
   /* --- General Layout Adjustments --- */
-   .screen, .screen2, .screen3, .screen4 {
-        height: auto;
-        min-height: 100vh;
-        padding: 40px 15px;
-        box-sizing: border-box;
-    }
+  .screen, .screen2, .screen3, .screen4 {
+    height: auto;
+    min-height: 100vh;
+    
+    /* 1. Reset margins to prevent horizontal overflow */
+    margin: 0 auto; 
+    
+    /* 2. Consistent padding: 40px top/bottom, 20px sides for better thumb-room */
+    padding: 40px 20px;
+    
+    /* 3. Ensures padding doesn't increase the width beyond 100% */
+    box-sizing: border-box;
+    
+    /* 4. Optional: Ensures the container never exceeds the viewport width */
+    width: 100%;
+    overflow-x: hidden; 
+  }
 
 
   /* --- Typography Scaling --- */
@@ -411,12 +422,19 @@ a.btn:hover {
     letter-spacing: -2px;
   }
 
+  .buttons, .a{
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
   /* --- About Card & Skills --- */
 
   .profile-pic {
   position: absolute;
   top: -20px;
-  right: 15px;
+  right: 5px;
   width: 90px;
   height: auto;
   transform: rotate(5deg);
@@ -451,7 +469,7 @@ a.btn:hover {
   }
 
   .card-photo {
-        width: 150px;
+        width: 90px;
         opacity: 0.9;
         transform: translateY(0);
         bottom: 10px;
