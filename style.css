@@ -418,7 +418,7 @@ a.btn:hover {
   }
 
   .card-header h1 {
-    font-size: 45px;
+    font-size: 38px;
     letter-spacing: -2px;
   }
 
@@ -434,22 +434,33 @@ a.btn:hover {
   .profile-pic {
   position: absolute;
   top: -20px;
-  right: 5px;
+  right: 10px;
   width: 90px;
   height: auto;
   transform: rotate(5deg);
   z-index: 2;
+  animation: float-mobile 4s ease-in-out infinite;
+  animation-delay: 50ms;
 }
 
   .about-card {
     padding: 30px 20px;
     margin: 40px auto;
+    max-width: 350px;
+    
   }
 
   .card-body {
     flex-direction: column;
     gap: 30px;
+    font-size: 12px;
   }
+
+  .bio-text {
+  flex: 2;
+  font-size: 12px;
+  text-align: justify;
+}
 
   .info-list {
     border-left: none;
