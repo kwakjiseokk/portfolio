@@ -308,6 +308,7 @@ a.btn:hover {
   flex-direction: column;
   transition: transform 0.3s cubic-bezier(0.2, 0, 0.2, 1), box-shadow 0.3s ease;
   gap: 40px;
+  min-height: fit-content;
 }
 
 .card::before {
@@ -342,7 +343,12 @@ a.btn:hover {
   letter-spacing: -2.5px;
   position: relative;
   z-index: 3;
+  padding-bottom: 0px;
  
+}
+
+.card ul {
+ padding-left: 0%;
 }
 
 .card li {
@@ -352,6 +358,8 @@ a.btn:hover {
   list-style: none;
   position: relative;
   z-index: 3;
+  top: -15px;
+  padding-top: 0%;
 }
 
 .card:hover {
@@ -434,13 +442,11 @@ a.btn:hover {
   .profile-pic {
   position: absolute;
   top: -20px;
-  right: 10px;
-  width: 90px;
+  right: 6px;
+  width: 80px;
   height: auto;
   transform: rotate(5deg);
   z-index: 2;
-  animation: float-mobile 4s ease-in-out infinite;
-  animation-delay: 50ms;
 }
 
   .about-card {
@@ -453,7 +459,9 @@ a.btn:hover {
   .card-body {
     flex-direction: column;
     gap: 30px;
-    font-size: 12px;
+    font-size: 12.5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
   }
 
   .bio-text {
@@ -473,18 +481,59 @@ a.btn:hover {
     overflow: visible;
     grid-template-columns: 1fr;
     gap: 35px; /* Stack cards vertically */
+    padding-top: 0;
   }
 
-  .card {
-    padding-top: 10px;
+  .highlight2{
+    font-size: 50px;
+    padding-bottom: 0;
   }
+
+  .screen3 .header-badge{
+    padding-bottom: 0%;
+  }
+
+  .card h2 {
+  font-family: "Instrument Serif", serif;
+  font-size: 45px;
+  padding-bottom: 0px;
+  margin: 0 0 10px 0;
+  font-weight: 400;
+  letter-spacing: -2.5px;
+  position: relative;
+  z-index: 3;
+  
+ 
+}
+
+.card li {
+  font-family: "Iosevka Charon", monospace;
+  font-size: 15px;
+  line-height: 1.5;
+  list-style: none;
+  position: relative;
+  z-index: 3;
+  
+}
+
+.card ul{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  justify-content: space-between;
+  padding-top: 0px;
+}
 
   .card-photo {
         width: 90px;
         opacity: 0.9;
         transform: translateY(0);
-        bottom: 10px;
+        bottom: 20px;
         right: 10px;
+    }
+
+    .card{
+      min-height: fit-content;
     }
 
 
