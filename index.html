@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="assets/icon.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>jb's portfolio</title>
+</head>
+<body>
+
+<!-- ✦ PAGE LOAD CURTAIN ✦ -->
+<div id="load-curtain" aria-hidden="true">
+    <div class="curtain-text">✦</div>
+</div>
+
+<!-- ✦ BACKGROUND FLOATERS — reduced set ✦ -->
+<div class="floaters-bg" aria-hidden="true">
+    <span class="floater f-star f1">✦</span>
+    <span class="floater f-star f2">✶</span>
+    <span class="floater f-star f4">✺</span>
+    <span class="floater f-star f6">✦</span>
+    <span class="floater f-star f9">✶</span>
+    <span class="floater f-doodle fd2">○</span>
+    <span class="floater f-doodle fd4">◇</span>
+    <span class="floater f-bold fb1">✦</span>
+    <span class="floater f-bold fb3">✺</span>
+</div>
+
+<!-- ===== STICKY NAV ===== -->
+<nav id="floating-nav" class="nav-container">
+    <div class="nav-inner">
+        <img src="assets/profile2.png" class="nav-logo" alt="logo">
+       
+        <div class="buttons">
+            <a href="#about" class="btn">about me</a>
+            <a href="#works" class="btn">works</a>
+            <a href="#contact" class="btn">contact</a>
+        </div>
+    </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section id="home" class="screen">
+    <div class="home">
+        <!-- Floating label tags -->
+        <div class="hero-tags" aria-hidden="true">
+            <span class="hero-tag tag-1">graphic designer</span>
+            
+            <span class="hero-tag tag-3">based in Laguna</span>
+            <span class="hero-tag tag-4">creative</span>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-name-wrap">
+                
+                <h1 class="hero-name">
+                    <span class="hero-name-line"></span>
+                    <span class="hero-name-line hero-name-jb">jifiles.kr</span>
+                </h1>
+               
+            </div>
+
+            <div class="hero-actions">
+                <a href="#works" class="hero-btn-primary">see my work ↓</a>
+                <a href="#about" class="hero-btn-ghost">about me</a>
+            </div>
+        </div>
+
+        <!-- scroll hint -->
+        <div class="scroll-hint" aria-hidden="true">
+            <div class="scroll-hint-arrow"></div>
+            <span>scroll</span>
+        </div>
+    </div>
+</section>
+
+<!-- ===== ABOUT SECTION ===== -->
+<section id="about" class="about-section">
+    <div class="section-deco-strip" aria-hidden="true">
+        <span>✦</span><span>· · ·</span><span>✶</span><span>· · ·</span><span>✺</span><span>· · ·</span><span>✦</span><span>· · ·</span><span>✶</span><span>· · ·</span><span>✺</span>
+    </div>
+
+    <div class="about-wrapper">
+
+        <!-- Left: Identity block -->
+        <div class="about-identity reveal-up">
+            <div class="about-name-block">
+                <img src="assets/profile.png" class="profile-pic" alt="profile picture">
+                <h1>I'm <span class="highlight"> Jb</span>,<br>Nice to meet you!</h1>
+            </div>
+            <div class="about-meta">
+                <div class="meta-row"><span class="meta-key">b.day</span><span class="meta-dots">............</span><span class="meta-val">06.12.2005</span></div>
+                <div class="meta-row"><span class="meta-key">address</span><span class="meta-dots">.........</span><span class="meta-val">Pila, Laguna</span></div>
+                <div class="meta-row"><span class="meta-key">school</span><span class="meta-dots">..........</span><span class="meta-val">ACTS Computer College</span></div>
+            </div>
+            <svg class="corner-doodle" viewBox="0 0 80 80" aria-hidden="true">
+                <path d="M10,70 Q25,30 40,50 Q55,70 70,20" stroke="#d4e17b" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <circle cx="10" cy="70" r="3" fill="#d4e17b"/>
+                <circle cx="70" cy="20" r="3" fill="#d4e17b"/>
+            </svg>
+        </div>
+
+        <!-- Right: Bio + Skills -->
+        <div class="about-right">
+            <!-- Bio card -->
+            <div class="bio-card reveal-up" style="--delay:0.1s">
+                <span class="card-star cs-1">✦</span>
+                <span class="card-star cs-2">✶</span>
+                <p>an aspiring designer with a passion for creativity and visual storytelling. I enjoy exploring different design styles and turning ideas into simple, meaningful, and eye-catching visuals.</p>
+                <p>Alongside design, I'm also learning front end development to expand my skills and bring ideas to life through both design and code. I'm constantly improving, exploring new experiences, and growing as a creative who values both aesthetics and functionality.</p>
+            </div>
+
+            <!-- Skills row -->
+            <div class="skills-header reveal-up" style="--delay:0.15s">
+                <h2 class="bento-section-title"><span class="highlight2">skills</span></h2>
+                <p class="bento-skills-sub">tools & tech i work with</p>
+            </div>
+
+            <div class="skills-row">
+                <!-- Tools -->
+                <div class="bento-card bento-skill-card reveal-up" style="--delay:0.2s">
+                    <img src="assets/hammer and wrench.png" class="card-photo" alt="tools">
+                    <div class="card-content">
+                        <h2>tools</h2>
+                        <ul>
+                            <li>Adobe Photoshop</li>
+                            <li>Vegas Pro</li>
+                            <li>Figma</li>
+                            <li>Visual Code Studio</li>
+                            <li>affinity</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Front End -->
+                <div class="bento-card bento-skill-card reveal-up" style="--delay:0.25s">
+                    <div class="card-content">
+                        <h2>front end</h2>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
+                    <img src="assets/desktop computer.png" class="card-photo" alt="frontend">
+                </div>
+
+                <!-- Learning -->
+                <div class="bento-card bento-skill-card reveal-up" style="--delay:0.3s">
+                    <span class="card-star cs-4">✦</span>
+                    <div class="card-content">
+                        <h2>learning</h2>
+                        <ul>
+                            <li>React JS</li>
+                            <li>Adobe Illustrator</li>
+                        </ul>
+                    </div>
+                    <img src="assets/books.png" class="card-photo" alt="learning">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== WORKS ===== -->
+<section id="works" class="works-section">
+    <div class="section-deco-strip" aria-hidden="true">
+        <span>✦</span><span>· · ·</span><span>✶</span><span>· · ·</span><span>✺</span><span>· · ·</span><span>✦</span><span>· · ·</span><span>✶</span><span>· · ·</span><span>✺</span>
+    </div>
+    <div class="container">
+        <div class="works-title-row reveal-up">
+            <span class="section-star-accent">✦</span>
+            <h1><span class="highlight2">works</span></h1>
+            <span class="section-star-accent">✶</span>
+        </div>
+        <p class="works-annotation">projects · designs</p>
+
+        <div class="gallery-grid">
+            <div class="gallery-item reveal-up" style="--delay:0.05s" data-project="project1" data-thumb="assets/lhc.png" onclick="openProject('project1')">
+                <div class="gallery-img-wrapper">
+                    <img src="assets/lhc.png" alt="Project One Layout">
+                </div>
+                <div class="gallery-info">
+                    <div class="gallery-info-top">
+                        <span class="gallery-category">2025 · Mobile App</span>
+                        <span class="gallery-star">✦</span>
+                    </div>
+                    <h3>LearnHub</h3>
+                    <p>an AI-powered learning application for students made with Flutter.</p>
+                    <span class="gallery-cta">view project →</span>
+                </div>
+            </div>
+
+            <div class="gallery-item reveal-up" style="--delay:0.1s" data-project="project2" data-thumb="assets/pr2.png" onclick="openProject('project2')">
+                <div class="gallery-img-wrapper">
+                    <img src="assets/pr2.png" alt="Project Two Layout">
+                </div>
+                <div class="gallery-info">
+                    <div class="gallery-info-top">
+                        <span class="gallery-category">2023 · Graphic Design</span>
+                        <span class="gallery-star">✶</span>
+                    </div>
+                    <h3>CWTS Tarp</h3>
+                    <p>First year project.</p>
+                    <span class="gallery-cta">view project →</span>
+                </div>
+            </div>
+
+            <div class="gallery-item reveal-up" style="--delay:0.15s" data-project="project3" data-thumb="assets/ce/ce1.jpg" onclick="openProject('project3')">
+                <div class="gallery-img-wrapper">
+                    <img src="assets/ce/ce2d/ce1.jpg" alt="Project Three Layout">
+                </div>
+                <div class="gallery-info">
+                    <div class="gallery-info-top">
+                        <span class="gallery-category">2024 · Graphic Design</span>
+                        <span class="gallery-star">✶</span>
+                    </div>
+                    <h3>LSPU CE2D Shirt</h3>
+                    <p>Block shirt.</p>
+                    <span class="gallery-cta">view project →</span>
+                </div>
+            </div>
+
+            <div class="gallery-item reveal-up" style="--delay:0.2s" data-project="project4" data-thumb="assets/vb/1.png" onclick="openProject('project4')">
+                <div class="gallery-img-wrapper">
+                    <img src="assets/vb/front.png" alt="Project Four Layout">
+                </div>
+                <div class="gallery-info">
+                    <div class="gallery-info-top">
+                        <span class="gallery-category">2024 · Graphic Design</span>
+                        <span class="gallery-star">✶</span>
+                    </div>
+                    <h3>Tournament Pubmat</h3>
+                    <p>Announcement pubmat for the tournament.</p>
+                    <span class="gallery-cta">view project →</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PROJECT MODAL ===== -->
+<div id="project-modal" class="modal-overlay" onclick="closeProject(event)">
+    <div class="modal-card" onclick="event.stopPropagation()">
+        <button class="modal-close" onclick="closeProject(event)">&times;</button>
+        <div class="modal-layout">
+            <div class="carousel-container">
+                <button class="carousel-btn prev-btn" onclick="moveSlide(-1)">&#10094;</button>
+                <div class="carousel-track" id="modal-carousel-track"></div>
+                <button class="carousel-btn next-btn" onclick="moveSlide(1)">&#10095;</button>
+                <div class="carousel-indicators" id="modal-carousel-indicators"></div>
+            </div>
+            <div class="modal-details">
+                <h2 id="modal-title">Project Title</h2>
+                <span id="modal-tag" class="modal-tag">Category</span>
+                <hr class="modal-divider">
+                <div id="modal-description" class="modal-bio"></div>
+                <div class="modal-specs">
+                    <div class="spec-row"><strong>Role:</strong> <span id="modal-role"></span></div>
+                    <div class="spec-row"><strong>Tools:</strong> <span id="modal-tools"></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ===== LIGHTBOX ===== -->
+<div id="lightbox-overlay" onclick="closeLightbox(event)">
+    <button class="lightbox-close" onclick="closeLightbox(event)" aria-label="Close">&times;</button>
+    <button class="lightbox-btn lightbox-prev" onclick="lightboxMove(-1, event)" aria-label="Previous">&#10094;</button>
+    <button class="lightbox-btn lightbox-next" onclick="lightboxMove(1, event)" aria-label="Next">&#10095;</button>
+    <div class="lightbox-inner" id="lightbox-inner">
+        <div class="lightbox-track" id="lightbox-track"></div>
+    </div>
+    <div class="lightbox-counter" id="lightbox-counter"></div>
+</div>
+
+<!-- ===== CONTACT MODAL ===== -->
+<div id="contact-modal" class="modal-overlay" onclick="closeContact(event)">
+    <div class="modal-card contact-modal-card" onclick="event.stopPropagation()">
+        <button class="modal-close" onclick="closeContact(event)">&times;</button>
+        <div class="contact-modal-content">
+            <h2>send a message <span class="highlight3">:)</span></h2>
+            <p class="contact-sub">Have a question or want to work together? Drop your details below!</p>
+            <form id="portfolio-contact-form" action="https://formspree.io/f/xeedgzkn" method="POST">
+                <div class="form-group">
+                    <label for="contact-name">your name</label>
+                    <input type="text" id="contact-name" name="name" placeholder="your name here" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">your email</label>
+                    <input type="email" id="contact-email" name="email" placeholder="your email here" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-message">message</label>
+                    <textarea id="contact-message" name="message" rows="5" placeholder="Hello Jb, let's talk design!" required></textarea>
+                </div>
+                <button type="submit" class="btn submit-form-btn">send message</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer id="contact" class="footer-section">
+    <div class="section-deco-strip" aria-hidden="true">
+        <span>✦</span><span>· · ·</span><span>✶</span><span>· · ·</span><span>✺</span><span>· · ·</span><span>✦</span><span>· · ·</span><span>✶</span><span>· · ·</span><span>✺</span>
+    </div>
+    <div class="footer-container">
+        <h2 class="footer-heading reveal-up">let's <span class="highlight2">connect</span></h2>
+        <div class="footer-links">
+            <a href="#" class="footer-link-item" onclick="openContact(event)">
+                <i class='bx bx-envelope'></i> email
+            </a>
+            <a href="https://instagram.com/jbsanjose_" target="_blank" class="footer-link-item">
+                <i class='bx bxl-instagram'></i> instagram
+            </a>
+            <a href="assets/resume.pdf" target="_blank" class="footer-link-item">
+                <i class='bx bx-download'></i> resume
+            </a>
+        </div>
+        <hr class="footer-divider">
+        <p class="footer-copyright">© 2026 jb. thanks for reading allat :33</p>
+    </div>
+</footer>
+
+<script>
+/* ========== PAGE LOAD CURTAIN ========== */
+window.addEventListener('load', () => {
+    const curtain = document.getElementById('load-curtain');
+    setTimeout(() => {
+        curtain.classList.add('curtain-out');
+        setTimeout(() => curtain.remove(), 800);
+    }, 700);
+});
+
+/* ========== HERO STAGGER ANIMATION ========== */
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        document.querySelectorAll('.hero-name-line').forEach((el, i) => {
+            el.style.transitionDelay = `${0.9 + i * 0.12}s`;
+            el.classList.add('revealed');
+        });
+        setTimeout(() => {
+            document.querySelector('.hero-eyebrow')?.classList.add('revealed');
+            document.querySelector('.hero-tagline')?.classList.add('revealed');
+            document.querySelector('.hero-actions')?.classList.add('revealed');
+            document.querySelectorAll('.hero-tag').forEach((t, i) => {
+                setTimeout(() => t.classList.add('revealed'), i * 100);
+            });
+        }, 200);
+    }, 750);
+});
+
+/* ========== SCROLL REVEAL ========== */
+const revealEls = document.querySelectorAll('.reveal-up');
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+        if (e.isIntersecting) {
+            e.target.classList.add('revealed');
+            revealObserver.unobserve(e.target);
+        }
+    });
+}, { threshold: 0.12 });
+revealEls.forEach(el => revealObserver.observe(el));
+
+/* ========== FLOATING NAV ========== */
+const nav = document.getElementById('floating-nav');
+const homeSection = document.getElementById('home');
+window.addEventListener('scroll', () => {
+    const trigger = window.innerWidth < 768
+        ? homeSection.offsetHeight * 0.2
+        : homeSection.offsetHeight * 0.3;
+    nav.classList.toggle('nav-fixed', window.scrollY > trigger);
+});
+
+/* ========== GALLERY CARD IMAGE GRADIENT ========== */
+function extractImageGradient(imgEl, cardEl) {
+    const canvas = document.createElement('canvas');
+    canvas.width = 8; canvas.height = 8;
+    const ctx = canvas.getContext('2d');
+    try {
+        ctx.drawImage(imgEl, 0, 0, 8, 8);
+        const pixels = ctx.getImageData(0, 0, 8, 8).data;
+        let r = 0, g = 0, b = 0, count = 0;
+        for (let i = 0; i < pixels.length; i += 4) {
+            r += pixels[i]; g += pixels[i+1]; b += pixels[i+2]; count++;
+        }
+        r = Math.round(r/count); g = Math.round(g/count); b = Math.round(b/count);
+        const gradient = `linear-gradient(135deg, rgba(${r},${g},${b},0.45) 0%, rgba(${r},${g},${b},0.08) 55%, rgba(255,255,255,0) 75%)`;
+        cardEl.style.setProperty('--card-gradient', gradient);
+    } catch(e) {
+        cardEl.style.setProperty('--card-gradient', 'linear-gradient(135deg, rgba(212,225,123,0.35) 0%, rgba(255,255,255,0) 60%)');
+    }
+}
+
+document.querySelectorAll('.gallery-item').forEach(card => {
+    const img = card.querySelector('.gallery-img-wrapper img');
+    if (!img) return;
+    const run = () => extractImageGradient(img, card);
+    if (img.complete) run(); else img.addEventListener('load', run);
+});
+
+/* ========== PROJECT DATA ========== */
+const projectData = {
+    project1: {
+        title: "LearnHub",
+        category: "2025 | Mobile App",
+        description: "<p>LearnHub is an AI-powered mobile application designed to transform traditional study habits into a smarter, more efficient learning experience. Unlike conventional note taking and reviewer methods, LearnHub allows users to scan handwritten or digital notes and automatically convert them into flashcards, summarized reviewers, and interactive quizzes.</p>",
+        role: "UI/UX Designer, Front End Developer",
+        tools: "Visual Code Studio, Figma, Flutter",
+        images: ["assets/lh1.png", "assets/lh2.png", "assets/lh3.jpg"]
+    },
+    project2: {
+        title: "CWTS Tarp",
+        category: "2023 | Graphic Design",
+        description: "<p>NSTP - CWTS Tarp for the school's culminating event.</p>",
+        role: "Graphic Designer",
+        tools: "Photoshop, Canva",
+        images: ["assets/pr2.png"]
+    },
+    project3: {
+        title: "LSPU CE2D Shirt",
+        category: "2024 | Graphic Design",
+        description: "<p>Block shirt design for LSPU CE2D.</p>",
+        role: "Graphic Designer",
+        tools: "Photoshop, Canva, affinity",
+        images: ["assets/ce/ce2d/ce1.jpg", "assets/ce/ce2d/ce2.jpg"]
+    },
+    project4: {
+        title: "Tournament Pubmat",
+        category: "2024 | Graphic Design",
+        description: "<p>Announcement pubmat for the tournament.</p>",
+        role: "Graphic Designer",
+        tools: "Photoshop, Canva",
+        images: ["assets/vb/front.png", "assets/vb/1.png","assets/vb/2.png", "assets/vb/3.png"]
+    },
+};
+
+let currentSlideIndex = 0, activeImages = [];
+
+function openProject(id) {
+    const d = projectData[id]; if (!d) return;
+    document.getElementById('modal-title').innerText = d.title;
+    document.getElementById('modal-tag').innerText = d.category;
+    document.getElementById('modal-description').innerHTML = d.description;
+    document.getElementById('modal-role').innerText = d.role;
+    document.getElementById('modal-tools').innerText = d.tools;
+    activeImages = d.images; currentSlideIndex = 0;
+    const track = document.getElementById('modal-carousel-track');
+    const indicators = document.getElementById('modal-carousel-indicators');
+    track.innerHTML = ''; indicators.innerHTML = '';
+    d.images.forEach((src, i) => {
+        const slide = document.createElement('div'); slide.className = 'carousel-slide';
+        const img = document.createElement('img'); img.src = src; img.alt = `${d.title} ${i+1}`;
+        img.style.cursor = 'zoom-in';
+        img.title = 'Click to view full image';
+        img.onerror = function(){ this.src = d.images[0]; };
+        img.addEventListener('click', (e) => { e.stopPropagation(); openLightbox(activeImages, currentSlideIndex); });
+        slide.appendChild(img); track.appendChild(slide);
+        const dot = document.createElement('div');
+        dot.className = `dot${i===0?' active':''}`;
+        dot.onclick = () => jumpToSlide(i);
+        indicators.appendChild(dot);
+    });
+    updateCarouselDisplay();
+    document.getElementById('project-modal').classList.add('active');
+    document.body.style.overflow = 'hidden';
+    initCarouselSwipe();
+}
+function closeProject(e) {
+    if (e && e.type === 'click' && e.currentTarget === document.getElementById('project-modal')) {
+        if (e.target !== e.currentTarget) return;
+    }
+    document.getElementById('project-modal').classList.remove('active');
+    document.body.style.overflow = '';
+}
+function moveSlide(dir) { currentSlideIndex = (currentSlideIndex+dir+activeImages.length)%activeImages.length; updateCarouselDisplay(); }
+function jumpToSlide(i) { currentSlideIndex = i; updateCarouselDisplay(); }
+function updateCarouselDisplay() {
+    document.getElementById('modal-carousel-track').style.transform = `translateX(-${currentSlideIndex*100}%)`;
+    document.querySelectorAll('.carousel-indicators .dot').forEach((d,i) => d.classList.toggle('active', i===currentSlideIndex));
+}
+
+/* ========== CAROUSEL SWIPE ========== */
+function initCarouselSwipe() {
+    const container = document.querySelector('.carousel-container');
+    if (!container) return;
+    let startX = 0, isDragging = false;
+    container.addEventListener('touchstart', e => { startX = e.touches[0].clientX; isDragging = true; }, { passive: true });
+    container.addEventListener('touchend', e => {
+        if (!isDragging) return; isDragging = false;
+        const diff = startX - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 40) moveSlide(diff > 0 ? 1 : -1);
+    });
+}
+
+function openContact(e) { e.preventDefault(); document.getElementById('contact-modal').classList.add('active'); document.body.style.overflow='hidden'; }
+function closeContact() { document.getElementById('contact-modal').classList.remove('active'); document.body.style.overflow=''; }
+
+/* ========== LIGHTBOX ========== */
+let lbImages = [], lbIndex = 0, lbTouchStartX = 0;
+
+function openLightbox(images, startIndex) {
+    lbImages = images; lbIndex = startIndex;
+    const track = document.getElementById('lightbox-track');
+    track.innerHTML = '';
+    lbImages.forEach((src, i) => {
+        const slide = document.createElement('div'); slide.className = 'lightbox-slide';
+        const img = document.createElement('img'); img.src = src; img.alt = `Image ${i+1}`;
+        img.addEventListener('click', e => e.stopPropagation());
+        slide.appendChild(img); track.appendChild(slide);
+    });
+    updateLightboxDisplay();
+    document.getElementById('lightbox-overlay').classList.add('active');
+    document.body.style.overflow = 'hidden';
+    initLightboxSwipe();
+}
+
+function closeLightbox(e) {
+    if (e && e.target.tagName === 'IMG') return;
+    const lb = document.getElementById('lightbox-overlay');
+    lb.classList.remove('active');
+    if (!document.getElementById('project-modal').classList.contains('active')) {
+        document.body.style.overflow = '';
+    }
+}
+
+function lightboxMove(dir, e) {
+    if (e) e.stopPropagation();
+    lbIndex = (lbIndex + dir + lbImages.length) % lbImages.length;
+    updateLightboxDisplay();
+}
+
+function updateLightboxDisplay() {
+    document.getElementById('lightbox-track').style.transform = `translateX(-${lbIndex * 100}%)`;
+    const counter = document.getElementById('lightbox-counter');
+    counter.innerHTML = lbImages.map((_, i) =>
+        `<span class="lightbox-dot${i === lbIndex ? ' active' : ''}" onclick="lbJump(${i})"></span>`
+    ).join('');
+}
+
+function lbJump(i) { lbIndex = i; updateLightboxDisplay(); }
+
+function initLightboxSwipe() {
+    const overlay = document.getElementById('lightbox-overlay');
+    overlay.addEventListener('touchstart', e => { lbTouchStartX = e.touches[0].clientX; }, { passive: true });
+    overlay.addEventListener('touchend', e => {
+        const diff = lbTouchStartX - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 45) lightboxMove(diff > 0 ? 1 : -1, null);
+    });
+}
+
+/* Keyboard navigation */
+document.addEventListener('keydown', e => {
+    const lb = document.getElementById('lightbox-overlay');
+    if (lb.classList.contains('active')) {
+        if (e.key === 'ArrowRight') lightboxMove(1, null);
+        if (e.key === 'ArrowLeft')  lightboxMove(-1, null);
+        if (e.key === 'Escape') { lb.classList.remove('active'); if (!document.getElementById('project-modal').classList.contains('active')) document.body.style.overflow = ''; }
+    }
+    const pm = document.getElementById('project-modal');
+    if (pm.classList.contains('active') && !lb.classList.contains('active')) {
+        if (e.key === 'ArrowRight') moveSlide(1);
+        if (e.key === 'ArrowLeft')  moveSlide(-1);
+        if (e.key === 'Escape') closeProject(null);
+    }
+});
+</script>
+</body>
+</html>
